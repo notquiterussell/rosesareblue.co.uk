@@ -1,0 +1,10 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+php_value auto_append_file none
+php_value auto_prepend_file none
+
+ErrorDocument 404 /index.html
+
+RedirectMatch 301 /action /index.html
+

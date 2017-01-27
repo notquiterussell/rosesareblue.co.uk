@@ -1,0 +1,7 @@
+#
+# robots.txt file for www.rosesareblue.co.uk
+#
+
+User-Agent: *
+Disallow: /cgi-bin/
+Disallow: /errors/
