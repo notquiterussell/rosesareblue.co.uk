@@ -1,4 +1,5 @@
 *.zip
+assets/css
 
 # Created by https://www.toptal.com/developers/gitignore/api/intellij+all,macos,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,macos,node
