@@ -1325,6 +1325,7 @@ input[type="button"],
   > header {
     @include vendor("flex-shrink", "0");
     padding: 3em;
+    height: 20em;
 
     .avatar {
       display: block;
