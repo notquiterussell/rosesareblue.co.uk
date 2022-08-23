@@ -47,20 +47,27 @@ p {
     padding-bottom: 70px;
 }
 
-.rounded-circle {
-    border: 1px solid;
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-}
 
 .rounded-circle {
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+}
+
+@media (min-width: 576px) {
+    .rounded-circle {
+        width: 250px;
+        height: 250px
+    }
+}
+
+@media (min-width: 768px) {
+    .rounded-circle {
+        width: 350px;
+        height: 350px
+    }
 }
 
 .profile-pic {
