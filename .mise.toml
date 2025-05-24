@@ -1,0 +1,8 @@
+[tools]
+node = "20"           # Or whatever version your project uses
+#awscli = "2"          # AWS CLI for Amplify usage - at the time of writing this is installing the x86 version on Apple Silicon
+amplify = "latest"    # AWS Amplify CLI
+
+[settings]
+experimental = true
+
