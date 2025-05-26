@@ -1,5 +1,9 @@
 import Head from "next/head"
 import Image from "next/image"
+import University from "@/education/university";
+import NVQ from "@/education/nvq";
+import Skills from "@/education/skills";
+import Technologies from "@/education/technologies";
 
 export default function Home() {
     return (
@@ -23,7 +27,6 @@ export default function Home() {
 
             <main id="top">
                 <div className="container" id="cv">
-                    {/* HEADER SECTION */}
                     <div className="container-fluid bg-1 text-center" itemScope itemType={"https://schema.org/Person"}>
                         <h1 className="margin" itemProp="name">Russell Geraghty</h1>
                         <div className="rounded-circle mx-auto margin">
@@ -229,52 +232,14 @@ export default function Home() {
                         </h2>
                         <div className="row" itemScope itemType={"https://schema.org/ItemList"}>
                             <div className="col-lg-3 col-sm-6">
-                                <ul className="keySkills">
-                                    <li itemProp="itemListElement">Typescript</li>
-                                    <li itemProp="itemListElement">JavaScript</li>
-                                    <li itemProp="itemListElement">NodeJS</li>
-                                    <li itemProp="itemListElement">Python</li>
-                                    <li itemProp="itemListElement">Java</li>
-                                </ul>
+                                <Technologies />
                             </div>
                             <div className="col-lg-3 col-sm-6">
-                                <ul>
-                                    <li itemProp="itemListElement">
-                                        <abbr title="Structured Query Language">SQL</abbr>
-                                    </li>
-                                    <li itemProp="itemListElement">
-                                        <abbr title="Cascading Style Sheets">CSS</abbr>/<abbr
-                                        title="Syntactically Awesome Style Sheets"
-                                    >SASS</abbr
-                                    >
-                                    </li>
-                                    <li itemProp="itemListElement">
-                                        Rabbit <abbr title="Message Queue">MQ</abbr>
-                                    </li>
-                                    <li itemProp="itemListElement">
-                                        <abbr title="Amazon Web Services">AWS</abbr>
-                                    </li>
-                                </ul>
+                                <Skills />
                             </div>
                             <div className="col-lg-6 col-sm-12">
-                                <div
-                                    itemScope
-                                    itemType={"https://schema.org/EducationalOrganization"}
-                                >
-                                    <h3 itemProp="name">University of Teesside</h3>
-                                    <p itemProp="name">
-                                        Instrumentation and Control Engineering (1st Class)
-                                    </p>
-                                </div>
-                                <div
-                                    itemScope
-                                    itemType={"https://schema.org/EducationalOrganization"}
-                                >
-                                    <h3 itemProp="name">National Vocational Qualification</h3>
-                                    <p itemProp="name">
-                                        Purchasing and Supply Chain Management (Level 4)
-                                    </p>
-                                </div>
+                                <University />
+                                <NVQ />
                             </div>
                         </div>
                     </div>
