@@ -1,0 +1,9 @@
+/* Set base font size and style */
+body {
+    @apply text-base text-gray-800;
+}
+
+/* Normalize text sizes inside sections */
+section, article, div, p, ul, ol {
+    @apply text-sm leading-relaxed;
+}

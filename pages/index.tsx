@@ -4,6 +4,9 @@ import University from "@/education/university";
 import NVQ from "@/education/nvq";
 import Skills from "@/education/skills";
 import Technologies from "@/education/technologies";
+import MathematicalModellingAndAI from "@/industries/mathematicalModellingAndAI";
+import Architecture from "@/industries/architecture";
+import ModelIntegration from "@/industries/modelIntegration";
 
 export default function Home() {
     return (
@@ -73,6 +76,22 @@ export default function Home() {
                             software and hardware solutions for clients in utility companies,
                             nuclear industry, financial services and broadcast.
                         </p>
+                    </div>
+
+                    <div className="container-fluid bg-3 px-4">
+                        <h2 className="margin text-center">Primary expertise</h2>
+                        <div className="row">
+                            <div className="col-sm-12 col-lg-6">
+                                <Architecture />
+                            </div>
+                            <div className="col-sm-12 col-lg-6">
+                                <ModelIntegration />
+                            </div>
+                            <div className="col-sm-12 col-lg-6">
+                                <MathematicalModellingAndAI />
+                            </div>
+
+                        </div>
                     </div>
 
                     <div className="container-fluid bg-3 px-4">
