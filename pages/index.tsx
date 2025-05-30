@@ -21,13 +21,96 @@ export default function Home() {
                       content="technical architect software engineer development Harrogate Yorkshire Russell Geraghty"/>
                 <meta charSet="UTF-8"/>
                 <link rel="shortcut icon" href="/favicon.png"/>
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-                <link rel="stylesheet"
-                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-                        defer></script>
             </Head>
 
+            <div className="min-h-screen flex items-center justify-center">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 w-full max-w-6xl">
+                    {/* Top Banner */}
+                    <div className="col-span-1 md:col-span-2 bg-rosesareblue text-white text-center p-4 rounded-xl shadow">
+                        <h1 className="mb-[45px]" itemProp="name">Russell Geraghty</h1>
+                        <div
+                            className="relative overflow-hidden rounded-full mx-auto
+                                       w-[150px] h-[150px]
+                                       sm:w-[250px] sm:h-[250px]
+                                       md:w-[350px] md:h-[350px]
+                                       mb-[45px]">
+                            <Image
+                                src="/assets/images/4BD3CB84-F9AB-4AB2-B5F9-BCB9E9FA89EE_1_105_c.jpeg"
+                                alt="Russell Geraghty Tour of Pendle 2014"
+                                className="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-300"
+                                fill
+                            />
+                        </div>
+
+                        <h2 className="mb-[45px]" itemProp="jobTitle">Technical architect</h2>
+
+                        <div className="flex flex-wrap justify-center gap-x-8 my-4">
+                            {/* GitHub */}
+                            <div>
+                                <a
+                                    itemProp="url"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://github.com/notquiterussell"
+                                    title="GitHub"
+                                    className="text-gray-200 hover:text-white transition"
+                                >
+                                    <span className="fa-brands fa-github text-3xl" aria-hidden="true" />
+                                    <span className="sr-only">GitHub</span>
+                                </a>
+                            </div>
+                            {/* Email */}
+                            <div>
+                                <a
+                                    itemProp="email"
+                                    title="Email me"
+                                    href={`mailto:${'russell'}@${'rosesareblue.co.uk'}`}
+                                    className="text-gray-200 hover:text-white transition"
+                                >
+                                    <span className="fa-solid fa-envelope text-3xl" aria-hidden="true" />
+                                    <span className="sr-only">Email</span>
+                                </a>
+                            </div>
+                            {/* Stack Overflow */}
+                            <div>
+                                <a
+                                    itemProp="url"
+                                    title="Stack Overflow"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://stackoverflow.com/users/12142198/notquiterussell"
+                                    className="text-gray-200 hover:text-white transition"
+                                >
+                                    <span className="fa-brands fa-stack-overflow text-3xl" aria-hidden="true" />
+                                    <span className="sr-only">Stack Overflow</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Middle Banner */}
+                    <div className="col-span-1 md:col-span-2 bg-green-500 text-white text-center p-4 rounded-xl shadow">
+                        Middle Banner
+                    </div>
+
+                    {/* Left Column */}
+                    <div className="bg-gray-100 p-4 rounded-xl shadow">
+                        Left Column Content
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="bg-gray-100 p-4 rounded-xl shadow">
+                        Right Column Content
+                    </div>
+
+                    {/* Bottom Banner */}
+                    <div
+                        className="col-span-1 md:col-span-2 bg-purple-500 text-white text-center p-4 rounded-xl shadow">
+                        Bottom Banner
+                    </div>
+                </div>
+            </div>
             <main id="top">
                 <div className="container" id="cv">
                     <div className="container-fluid bg-1 text-center" itemScope itemType={"https://schema.org/Person"}>
@@ -46,7 +129,9 @@ export default function Home() {
                         <div className="row">
                             <div className="col-sm-2 offset-sm-3">
                                 <a itemProp="url" target="_blank" rel="noopener noreferrer"
-                                   href="https://github.com/notquiterussell" title="GitHub">
+                                   href="https://github.com/notquiterussell"
+                                   title="GitHub"
+                                   className="text-gray-400 hover:text-white transition">
                                     <span className="fa-brands fa-3x fa-github"><span className="sr-only">GitHub</span></span>
                                 </a>
                             </div>
@@ -67,7 +152,7 @@ export default function Home() {
                     <div className="container-fluid bg-2 px-4 text-center">
                         <h2 className="margin">Personal profile</h2>
                         <p>
-                            I&apos;m a technical architect with over 25 years&apos; experience in delivering
+                            I&apos;m a technical architect with over 30 years&apos; experience in delivering
                             projects.
                         </p>
                         <p>
@@ -78,23 +163,27 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="container-fluid bg-3 px-4">
-                        <h2 className="margin text-center">Primary expertise</h2>
-                        <div className="row">
-                            <div className="col-sm-12 col-lg-6">
-                                <Architecture />
-                            </div>
-                            <div className="col-sm-12 col-lg-6">
-                                <ModelIntegration />
-                            </div>
-                            <div className="col-sm-12 col-lg-6">
-                                <MathematicalModellingAndAI />
-                            </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <h2 className="col-span-full text-center text-xl font-bold">Primary expertise</h2>
 
-                        </div>
+                        <div><Architecture/></div>
+                        <div><ModelIntegration/></div>
+                        <div><MathematicalModellingAndAI/></div>
                     </div>
 
-                    <div className="container-fluid bg-3 px-4">
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-blue-200 p-4">Item 1</div>
+                        <div className="bg-blue-300 p-4">Item 2</div>
+
+                        <div className="bg-blue-200 p-4">Item 3</div>
+                        <div className="bg-blue-300 p-4">Item 4</div>
+
+                        <div className="bg-blue-200 p-4">Item 5</div>
+                        <div className="bg-blue-300 p-4">Item 6</div>
+
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-4">
                         <h2 className="margin text-center">Primary expertise</h2>
                         <div className="row">
                             <div className="col-sm-12 col-lg-6">
@@ -251,14 +340,14 @@ export default function Home() {
                         </h2>
                         <div className="row" itemScope itemType={"https://schema.org/ItemList"}>
                             <div className="col-lg-3 col-sm-6">
-                                <Technologies />
+                                <Technologies/>
                             </div>
                             <div className="col-lg-3 col-sm-6">
-                                <Skills />
+                                <Skills/>
                             </div>
                             <div className="col-lg-6 col-sm-12">
-                                <University />
-                                <NVQ />
+                                <University/>
+                                <NVQ/>
                             </div>
                         </div>
                     </div>

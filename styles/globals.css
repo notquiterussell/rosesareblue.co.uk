@@ -1,9 +1,25 @@
-/* Set base font size and style */
-body {
-    @apply text-base text-gray-800;
-}
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/* Normalize text sizes inside sections */
-section, article, div, p, ul, ol {
-    @apply text-sm leading-relaxed;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-[20px] leading-relaxed text-[#f5f6f7] font-sans bg-[#181818] bg-repeat;
+        background-image: url('./css-images/tile.gif');
+    }
+
+    h1 {
+        @apply text-[2.5rem];
+    }
+
+    h2 {
+        @apply text-[2rem];
+    }
+
+    h3 {
+        @apply text-[1.75rem];
+    }
 }
