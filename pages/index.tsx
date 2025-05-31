@@ -37,15 +37,15 @@ export default function Home() {
                                        mb-[45px]">
                             <Image
                                 src="/assets/images/4BD3CB84-F9AB-4AB2-B5F9-BCB9E9FA89EE_1_105_c.jpeg"
-                                alt="Russell Geraghty Tour of Pendle 2014"
-                                className="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-300"
+                                alt="Russell Geraghty - Tour of Pendle 2014"
+                                className="object-cover w-full h-full fill grayscale hover:grayscale-0 transition duration-300"
                                 fill
                             />
                         </div>
 
                         <h2 className="mb-[45px]" itemProp="jobTitle">Technical architect</h2>
 
-                        <div className="flex flex-wrap justify-center gap-x-8 my-4">
+                        <div className="flex flex-wrap justify-center gap-x-24 my-4">
                             {/* GitHub */}
                             <div>
                                 <a
@@ -56,7 +56,7 @@ export default function Home() {
                                     title="GitHub"
                                     className="text-gray-200 hover:text-white transition"
                                 >
-                                    <span className="fa-brands fa-github text-3xl" aria-hidden="true" />
+                                    <span className="fa-brands fa-github text-6xl" aria-hidden="true" />
                                     <span className="sr-only">GitHub</span>
                                 </a>
                             </div>
@@ -68,7 +68,7 @@ export default function Home() {
                                     href={`mailto:${'russell'}@${'rosesareblue.co.uk'}`}
                                     className="text-gray-200 hover:text-white transition"
                                 >
-                                    <span className="fa-solid fa-envelope text-3xl" aria-hidden="true" />
+                                    <span className="fa-solid fa-envelope text-6xl" aria-hidden="true" />
                                     <span className="sr-only">Email</span>
                                 </a>
                             </div>
@@ -82,7 +82,7 @@ export default function Home() {
                                     href="https://stackoverflow.com/users/12142198/notquiterussell"
                                     className="text-gray-200 hover:text-white transition"
                                 >
-                                    <span className="fa-brands fa-stack-overflow text-3xl" aria-hidden="true" />
+                                    <span className="fa-brands fa-stack-overflow text-6xl" aria-hidden="true" />
                                     <span className="sr-only">Stack Overflow</span>
                                 </a>
                             </div>
