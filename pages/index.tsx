@@ -25,9 +25,8 @@ export default function Home() {
 
             <div className="min-h-screen flex items-center justify-center">
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 w-full max-w-6xl">
-                    {/* Top Banner */}
-                    <div className="col-span-1 md:col-span-2 bg-rosesareblue text-white text-center p-4 rounded-xl shadow">
+                <div className="grid grid-cols-1 md:grid-cols-2 p-6 w-full max-w-6xl">
+                    <section className="col-span-1 md:col-span-2 bg-rosesareblue text-white text-center p-4">
                         <h1 className="mb-[45px]" itemProp="name">Russell Geraghty</h1>
                         <div
                             className="relative overflow-hidden rounded-full mx-auto
@@ -87,28 +86,54 @@ export default function Home() {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    {/* Middle Banner */}
-                    <div className="col-span-1 md:col-span-2 bg-green-500 text-white text-center p-4 rounded-xl shadow">
-                        Middle Banner
-                    </div>
+                    <section className="col-span-1 md:col-span-2 bg-profile text-white text-center p-4">
+                        <h2>Personal profile</h2>
+                        <p>
+                            I&#39;m a technical architect with over 30 years&#39; experience in delivering projects.
+                        </p>
+                        <p>
+                            My background includes retail, finance, heavy engineering and manufacturing. Key project roles include leading teams to
+                            deliver software and hardware solutions for clients in utility companies, nuclear industry, financial services and broadcast.
+                        </p>
+                    </section>
 
-                    {/* Left Column */}
-                    <div className="bg-gray-100 p-4 rounded-xl shadow">
+                    <section className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl bg-primary_experience text-[#555] p-8">
+                        <h2 className={"col-span-1 md:col-span-2 text-center pb-6"}>Primary Expertise</h2>
+                        <div className="text-sm">
+                            <Architecture/>
+                        </div>
+                        <div className="text-sm">
+                            <ModelIntegration/>
+                        </div>
+                    </section>
+
+
+                    <div className="col-span-1 md:col-span-2 bg-work_experience text-white text-center p-4">
+                        <h2>Work experience</h2>
+                    </div>
+                    <div className="bg-work_experience p-4 text-white">
                         Left Column Content
                     </div>
-
-                    {/* Right Column */}
-                    <div className="bg-gray-100 p-4 rounded-xl shadow">
+                    <div className="bg-work_experience p-4 text-white">
                         Right Column Content
                     </div>
 
-                    {/* Bottom Banner */}
-                    <div
-                        className="col-span-1 md:col-span-2 bg-purple-500 text-white text-center p-4 rounded-xl shadow">
-                        Bottom Banner
-                    </div>
+                    <section className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-3 w-full max-w-6xl bg-rosesareblue text-white p-8">
+                        <h2 className={"col-span-1 md:col-span-3 text-center pb-6"}>Key skills and education</h2>
+                        <div>
+                            <Skills/>
+                        </div>
+                        <div>
+                            <Technologies/>
+                        </div>
+
+                        <div>
+                            <NVQ/>
+                            <University />
+                        </div>
+                    </section>
                 </div>
             </div>
             <main id="top">

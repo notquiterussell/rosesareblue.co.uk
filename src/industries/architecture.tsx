@@ -10,7 +10,7 @@ export default function Architecture() {
             endYear={null}
             roles={["FX trading", "Financial exchanges", "Sports news sites", "Software medical devices", "Gambling cessation"]}
             highlights={[
-                "Optimisation of low latency gambling cessation tool for the UK market",
+                "Optimisation of low latency gambling cessation tool",
                 ""
             ]}
             technologies={[

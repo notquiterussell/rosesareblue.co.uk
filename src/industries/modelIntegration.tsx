@@ -4,18 +4,22 @@ import {faRobot} from "@fortawesome/free-solid-svg-icons";
 export default function ModelIntegration() {
     return (
         <ExperienceItem
-            title={"AI and mathematical model integration"}
+            title={"AI & Modelling"}
             icon={faRobot}
-            startYear={2003}
+            startYear={1995}
             roles={[
                 "UX Architect",
                 "Architect",
+                "Student", "Carbon trading", "Java engineer"
             ]}
             highlights={[
-                "Mail opening and categorisation for UK Government home buying scheme",
+                "Mail opening and categorisation for UK Government",
                 "Covid susceptibility model for the English population",
                 "Price optimisation for supermarkets and hardware stores",
+                "Demand modelling of staff in a consultancy",
+                "Emissions calculator using directed graphs",
+                "Modelling of multivariable pressure and flow control",
             ]}
-            technologies={["Azure", "AWS", "WebLogic", "WebSphere", "Typescript"]}/>
+            technologies={["Azure", "AWS", "WebLogic", "WebSphere", "Typescript","Databricks", "Matlab", "Simulink", "Java", "PHP",]}/>
     )
 }

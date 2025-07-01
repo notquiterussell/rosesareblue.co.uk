@@ -6,3 +6,5 @@ amplify = "latest"    # AWS Amplify CLI
 [settings]
 experimental = true
 
+[tasks.dev]
+run = "npm run dev"

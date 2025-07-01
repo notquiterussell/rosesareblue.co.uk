@@ -23,7 +23,7 @@ const ExperienceItem: FC<ExperienceItemProps> = ({
                                                  }) => {
     return (
         <>
-            <h3 className="text-l font-bold flex items-center gap-2">
+            <h3>
                 <FontAwesomeIcon icon={icon} style={{ opacity: 0.6 }}  /> {title}
             </h3>
             <p><strong>Roles:</strong> {roles.sort().join(", ")}</p>
@@ -36,10 +36,10 @@ const ExperienceItem: FC<ExperienceItemProps> = ({
                     ))}
                 </ul>
             </div>
-            <div>
+            <p>
                 <strong>Technologies: </strong>
                 {technologies.sort().join(", ")}
-            </div>
+            </p>
         </>
     );
 };
