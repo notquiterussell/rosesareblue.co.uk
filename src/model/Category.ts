@@ -3,4 +3,6 @@ export type Category =
     | "Consultancy"
     | "Development"
     | "ElectricalEngineering"
-    | "IT Operations";
+    | "IT Operations"
+    | "Management"
+    ;
