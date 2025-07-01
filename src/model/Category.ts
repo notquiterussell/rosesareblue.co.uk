@@ -3,6 +3,7 @@ export type Category =
     | "Consultancy"
     | "Development"
     | "ElectricalEngineering"
-    | "IT Operations"
+    | "ITOperations"
     | "Management"
+    | "MathematicalModelling"
     ;

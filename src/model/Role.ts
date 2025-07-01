@@ -1,18 +1,16 @@
-import {Category,} from "./Category";
+import {Project,} from "@/model/Project";
 
 export interface RoughDate {
     month: number;
     year: number;
 }
 
-export type Highlights = Partial<Record<Category, string[]>>;
 
 export interface Role {
     id: number;
     start: RoughDate;
     end?: RoughDate;
     companyName: string;
-    description: string;
-    highlights: Highlights;
-    technologies: string[];
+    introduction: string;
+    projects: Project[];
 }
