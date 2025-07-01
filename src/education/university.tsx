@@ -9,5 +9,5 @@ export default function University() {
                 Instrumentation and Control Engineering (1st Class)
             </p>
         </div>
-    )
+    );
 }

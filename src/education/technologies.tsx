@@ -10,5 +10,5 @@ export default function Technologies() {
             <li itemProp="itemListElement">Llama <abbr title={"Artificial Intelligence"}>AI</abbr></li>
             <li itemProp="itemListElement">OpenAI</li>
         </ul>
-    )
+    );
 }

@@ -1,16 +1,46 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import tsPlugin from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+import stylistic from '@stylistic/eslint-plugin';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+export default [
+    {
+        files: ["src/**/*.{ts,tsx}", "./eslint.config.mjs",],
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+        plugins: {
+            "@typescript-eslint": tsPlugin,
+            '@stylistic': stylistic,
+        },
+
+        languageOptions: {
+            parser: tsParser,
+
+            ecmaVersion: "latest",
+            sourceType: "module",
+        },
+
+        rules: {
+            "comma-dangle": ["error", {
+                arrays: "always",
+                objects: "always",
+                imports: "always",
+                exports: "always",
+                functions: "always",
+            },],
+            '@stylistic/semi': 'error',
+            "@stylistic/no-multiple-empty-lines": ["error", {"max": 2, "maxEOF": 0,},],
+            "@typescript-eslint/explicit-function-return-type": "warn",
+            "@stylistic/member-delimiter-style": ["error", {
+                "multiline": {
+                    "delimiter": "semi",
+                    "requireLast": true,
+                },
+                "singleline": {
+                    "delimiter": "semi",
+                    "requireLast": false,
+                },
+                "multilineDetection": "brackets",
+            },],
+        },
+    },
 ];
-
-export default eslintConfig;

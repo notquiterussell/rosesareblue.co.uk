@@ -15,5 +15,5 @@ export default function Skills() {
             >SASS</abbr
             ></li>
         </ul>
-    )
+    );
 }

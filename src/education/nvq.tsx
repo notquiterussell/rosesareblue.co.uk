@@ -9,5 +9,5 @@ export default function NVQ(){
                 Purchasing and Supply Chain Management (Level 4)
             </p>
         </div>
-    )
+    );
 }

@@ -55,7 +55,7 @@ export default function Home() {
                                     title="GitHub"
                                     className="text-gray-200 hover:text-white transition"
                                 >
-                                    <span className="fa-brands fa-github text-6xl" aria-hidden="true" />
+                                    <span className="fa-brands fa-github text-6xl" aria-hidden="true"/>
                                     <span className="sr-only">GitHub</span>
                                 </a>
                             </div>
@@ -67,7 +67,7 @@ export default function Home() {
                                     href={`mailto:${'russell'}@${'rosesareblue.co.uk'}`}
                                     className="text-gray-200 hover:text-white transition"
                                 >
-                                    <span className="fa-solid fa-envelope text-6xl" aria-hidden="true" />
+                                    <span className="fa-solid fa-envelope text-6xl" aria-hidden="true"/>
                                     <span className="sr-only">Email</span>
                                 </a>
                             </div>
@@ -81,7 +81,7 @@ export default function Home() {
                                     href="https://stackoverflow.com/users/12142198/notquiterussell"
                                     className="text-gray-200 hover:text-white transition"
                                 >
-                                    <span className="fa-brands fa-stack-overflow text-6xl" aria-hidden="true" />
+                                    <span className="fa-brands fa-stack-overflow text-6xl" aria-hidden="true"/>
                                     <span className="sr-only">Stack Overflow</span>
                                 </a>
                             </div>
@@ -94,12 +94,15 @@ export default function Home() {
                             I&#39;m a technical architect with over 30 years&#39; experience in delivering projects.
                         </p>
                         <p>
-                            My background includes retail, finance, heavy engineering and manufacturing. Key project roles include leading teams to
-                            deliver software and hardware solutions for clients in utility companies, nuclear industry, financial services and broadcast.
+                            My background includes retail, finance, heavy engineering and manufacturing. Key project
+                            roles include leading teams to
+                            deliver software and hardware solutions for clients in utility companies, nuclear industry,
+                            financial services and broadcast.
                         </p>
                     </section>
 
-                    <section className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl bg-primary_experience text-[#555] p-8">
+                    <section
+                        className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl bg-primary_experience text-[#555] p-8">
                         <h2 className={"col-span-1 md:col-span-2 text-center pb-6"}>Primary Expertise</h2>
                         <div className="text-sm">
                             <Architecture/>
@@ -120,7 +123,8 @@ export default function Home() {
                         Right Column Content
                     </div>
 
-                    <section className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-3 w-full max-w-6xl bg-rosesareblue text-white p-8">
+                    <section
+                        className="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-3 w-full max-w-6xl bg-rosesareblue text-white p-8">
                         <h2 className={"col-span-1 md:col-span-3 text-center pb-6"}>Key skills and education</h2>
                         <div>
                             <Skills/>
@@ -131,7 +135,7 @@ export default function Home() {
 
                         <div>
                             <NVQ/>
-                            <University />
+                            <University/>
                         </div>
                     </section>
                 </div>
@@ -258,7 +262,7 @@ export default function Home() {
                                     </h3>
                                     <p className="subDetails">May 2010 &ndash; Present</p>
                                     <p itemProp="description">
-                                        At present I am a technical architect for BJSS. This involves
+                                        At present I am a technical architect for CGI. This involves
                                         project work for clients, either entirely outsourced to our
                                         Leeds offices or providing expertise on site to augment client
                                         teams.
