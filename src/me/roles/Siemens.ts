@@ -29,7 +29,7 @@ the company’s SunSystems financial products and provided real time updates of 
 status, order entry and project inventory. The system also monitored project income and
 expenditure and provided management accounts.`,
             category: "Development",
-            highlights: ["Distributed web based procurement system in 1998",],
+            highlights: ["Distributed web based procurement system",],
             technologies: ["Microsoft SQL Server", "PHP", "Java", "Microsoft DCOM",],
         },
         {
