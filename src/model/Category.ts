@@ -6,4 +6,5 @@ export type Category =
     | "ITOperations"
     | "Management"
     | "MathematicalModelling"
+    | "Testing"
     ;

@@ -30,7 +30,7 @@ status, order entry and project inventory. The system also monitored project inc
 expenditure and provided management accounts.`,
             category: "Development",
             highlights: ["Distributed web based procurement system",],
-            technologies: ["Microsoft SQL Server", "PHP", "Java", "Microsoft DCOM",],
+            technologies: ["Microsoft SQL Server", "PHP", "Java", "Microsoft DCOM", "XML", "XSLT", "Apache Cocoon",],
         },
         {
             title: "Hardware rollout to all mainland UK power stations",

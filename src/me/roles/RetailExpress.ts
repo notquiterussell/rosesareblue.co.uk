@@ -38,7 +38,7 @@ export default (): Role => {
     horizontal scaling in order to provide sufficient processing power to complete the job each
     night.`,
                 highlights: [],
-                technologies: ["Java", "XML", "WebServices", "WebLogic", "WebSphere",],
+                technologies: ["Java", "XML", "WebServices", "WebLogic", "WebSphere", "Map/Reduce", "Statistical regression", "Jenkins",],
             },
             {
                 title: "Competitor price checks",
